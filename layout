@@ -1,5 +1,9 @@
 --[[
 
+       this is just a repost of Lyn's Layout for 2.4.3
+       full credit goes to lyn - eiszeit
+
+
 	oUF_Lyn
 
 	Author:		Lyn
@@ -634,10 +638,6 @@ self.Debuffs = CreateFrame('Frame', nil, self)
 	if(unit == 'player' or unit == 'target') then
 	    self.Castbar = CreateFrame('StatusBar', nil, self)
 	    self.Castbar:SetStatusBarTexture(bartex)
-
-           if(playername == "Zuliane") then
-           self.Castbar:hide()
-           end
 
 		if(unit == "player") then
 			self.Castbar:SetStatusBarColor(1, 0.50, 0)
