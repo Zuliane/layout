@@ -678,7 +678,7 @@ self.Debuffs = CreateFrame('Frame', nil, self)
 			self.Castbar:SetPoint('CENTER', UIParent, 'CENTER', 350, 50)
 		end
 
-	     if(playerClass=="PRIEST" and unit == "player") then
+	     if(playerClass=="WARRIOR" and unit == "player") then
 
 	     self.Castbar:SetPoint('CENTER', UIParent, 'Center', 0, -280)
 
