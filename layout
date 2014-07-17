@@ -2,7 +2,7 @@
 
        this is just a repost of Lyn's Layout for 2.4.3
        full credit goes to lyn - eiszeit
-
+       
 	oUF_Lyn
 
 	Author:		Lyn
@@ -682,7 +682,18 @@ self.Debuffs = CreateFrame('Frame', nil, self)
 
 	     self.Castbar:SetPoint('CENTER', UIParent, 'Center', 0, -280)
 
+
+	     	     self.Castbar:SetPoint('CENTER', UIParent, 'Center', 0, -280)
+
 	     end
+
+	     	     if(playerClass=="WARRIOR" and unit == "target") then
+
+			self.Castbar:SetPoint('CENTER', UIParent, 'CENTER', 0, targetCastBar_y)
+
+
+	     end
+
 
 		self.Castbar:SetBackdropColor(0, 0, 0, 0.5)
 
