@@ -638,10 +638,6 @@ self.Debuffs = CreateFrame('Frame', nil, self)
 	    self.Castbar = CreateFrame('StatusBar', nil, self)
 	    self.Castbar:SetStatusBarTexture(bartex)
 
-           if(playername == "Zuliane") then
-           self.Castbar:hide()
-           end
-
 		if(unit == "player") then
 			self.Castbar:SetStatusBarColor(1, 0.50, 0)
 			self.Castbar:SetHeight(20)
@@ -681,6 +677,12 @@ self.Debuffs = CreateFrame('Frame', nil, self)
 
 			self.Castbar:SetPoint('CENTER', UIParent, 'CENTER', 350, 50)
 		end
+
+	     if(playerClass=="PRIEST" and unit == "player") then
+
+	     self.Castbar:SetPoint('CENTER', UIParent, 'Center', 0, -280)
+
+	     end
 
 		self.Castbar:SetBackdropColor(0, 0, 0, 0.5)
 
