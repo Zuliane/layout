@@ -393,6 +393,12 @@ local func = function(self, unit)
 		self.Power.value:SetJustifyH"LEFT"
 		self.Level:Hide()
 
+	        if(playerClass=="HUNTER") then
+		        self.Power.value:SetTextColor(0.2, 0.66, 0.93)
+
+	        end
+
+
 		if(playerClass=="ROGUE") then
 		        self.Power.value:SetTextColor(1.0, 0.96, 0.41)
 	        end
